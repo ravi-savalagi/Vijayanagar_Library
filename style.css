@@ -1510,7 +1510,7 @@ blockquote cite {
   color: var(--light-color);
 }
 .stellarnav.desktop li.has-sub a{
-  padding-right: 30px;
+  padding-right: 15px;
 }
 .menu-list a.item-anchor{
   text-transform: capitalize;

@@ -21,8 +21,46 @@
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
-  </head>
-  <body>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Include DataTables CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <!-- Include DataTables Search plugin -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/dataTables.searchWithFontAwesomeIcon.js"></script>
+    <style>
+      /* Optional: Customize table styles */
+      #libraryTable {
+          font-family: Arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+      }
+      
+      #libraryTable td, #libraryTable th {
+          border: 1px solid #dddddd;
+          padding: 8px;
+      }
+      
+      #libraryTable tr:nth-child(even) {
+          background-color: #f2f2f2;
+      }
+      
+      #libraryTable th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #b3b4c9;
+          color: white;
+      }
+  </style>
+</head>
+<body>
+
+    
+
 
     <div class="preloader-wrapper">
       <div class="preloader">
@@ -33,8 +71,8 @@
       <div class="search-popup-container">
 
         <form role="search" method="get" class="search-form" action="">
-          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
-          <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
+          <!-- <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" /> -->
+          <!-- <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button> -->
         </form>
 
         <h5 class="cat-list-title">Browse Categories</h5>
@@ -135,11 +173,9 @@
                         <a href="branch-details.html" class="item-anchor active d-flex align-item-center" data-effect="Shop">Branches<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
                           <li><a href="branch-details.html" class="item-anchor">Branches Details</a></li>
-                          <li><a href="Gram Panchayati.html" class="item-anchor">Gram Panchayati</a></li>
-                          <li><a href="reading-room.html" class="item-anchor"> Reading Rooms</a></li>
-                
-                          <!-- <li><a href="shop-slider.html" class="item-anchor">Shop slider<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="shop-grid.html" class="item-anchor">Shop grid<span class="text-primary"> (PRO)</span></a></li>
+                           <li><a href="Gram Panchayati.html" class="item-anchor">Gram Panchayati Library</a></li>
+                           <li><a href="reading-room.html" class="item-anchor"> Reading Rooms</a></li>
+                         <!-- <li><a href="shop-grid.html" class="item-anchor">Shop grid<span class="text-primary"> (PRO)</span></a></li>
                           <li><a href="shop-list.html" class="item-anchor">Shop list<span class="text-primary"> (PRO)</span></a></li>
                           <li><a href="single-product.html" class="item-anchor">Single product<span class="text-primary"> (PRO)</span></a></li>
                           <li><a href="cart.html" class="item-anchor">Cart<span class="text-primary"> (PRO)</span></a></li>
@@ -188,7 +224,15 @@
                           <li><a href="single-post.html" class="item-anchor">Single post</a></li>
                         </ul>
                       </li> -->
-
+                      <li class="menu-item has-sub">
+                        <a href="https://www.karnatakadigitalpubliclibrary.org" class="item-anchor d-flex align-item-center" data-effect="Blog" target="_blank">Digital Library</a>
+                        <!-- <ul class="submenu">
+                          <li><a href="blog.html" class="item-anchor">Recent Activities</a></li>
+                          <li><a href="blog-sidebar.html" class="item-anchor">Library Day<span class="text-primary"> </span></a></li>
+                          <li><a href="blog-masonry.html" class="item-anchor">National Library Week<span class="text-primary"> </span></a></li>
+                          <li><a href="single-post.html" class="item-anchor">World book day</a></li>
+                        </ul> -->
+                      </li>
                       <li><a href="contact.html" class="item-anchor" data-effect="Contact">Contact</a></li>
 
                     </ul>
@@ -202,14 +246,20 @@
       </div>
     </header>
 
-    <section class="site-banner jarallax min-height300 padding-large" style="background: url(images/hero-image.jpg) no-repeat; background-position: top;">
+
+
+
+
+
+
+    <section class="site-banner jarallax min-height600 padding-large" style="background: url(images/hero-image.jpg) no-repeat; background-position: top;">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="page-title">About page</h1>
+            <!-- <h1 class="page-title">About page</h1> -->
             <div class="breadcrumbs">
               <span class="item">
-                <a href="index.html"><h1>Home</h1></a>
+                <!-- <a href="index.html"><h1>Home</h1></a> -->
               </span>
               <!-- <span class="item">Shop</span> -->
             </div>
@@ -218,28 +268,7 @@
       </div>
     </section>
 
-    <div class="shopify-grid padding-large">
-      <div class="container">
-        <div class="row">
-          <h2>Reference Section</h2>
-
-           <p> Libraries are playing a dominating role and we have to accept its challenges and ride with the wave. The state of libraries in a country reflects states of its cultural attainment in relation to other developed and developing nations. Reading of good books certainly stimulates the development of intellectual resources. Here come the roles of libraries in making available the recorded knowledge/information to the members of society for their intellectual development. Reference service is considered as the hub of all library activities, the supreme and ultimate function of the library and the very essence of librarianship.
-            
-            Reference Section in Malleshwaram Library Consists of Encyclopedia, Dictionaries, Year Book, General Books, And Competitive Books. This section is always jam packed with young readers who are preparing for competitive examinations.
-            
-            Pioneer of library science in India Dr. S. R. Ranganathan called reference service as The Preportant achievement of modern humanism in library services.
-            
-            He said, The happiest moment in life of a librarian is the moment of his doing reference service. It is the heart of library service.
-            
-            Reference service plays an important role in satisfying the laws of library science. It helps to maximize the use of the library. It is necessary to make a desired kind of contact between the user and the document.
-            
-            Today, we are living in an information age. Information has become an important resource possibly as important as oil. Information is power. A lot of our activities revolve around information. Realizing the importance of information.
-            
-            There is a rapid growth in scientific technical and commercial knowledge which needs to keep the scientist abreast with the latest information and therefore in order to provide an accurate information at the time of need, facilities of reference service must be there to widen the horizon of information retrieval to the information seeker.</p>
-
-
-<br/>
-        </div></div></div>
+    
 
             <!-- 
           <section id="selling-products" class="col-md-9 product-store">
@@ -1453,6 +1482,451 @@
       <hr>
     </section> -->
 
+
+    
+
+    <h2 style="
+    text-align: center;
+    color: brown;
+">City Central Library, West Zone, Vijayanagar, Bangalore</h2>    
+    <table id="libraryTable">
+        <thead>
+            <tr>
+                <th>Sl. No</th>
+                <th>Branch Name & Address</th>
+                <th>Incharge Name</th>
+                <th>Library Details</th>
+                <th>Library Timings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td><b>Hampinagar Branch Library</b>
+                  Near RPC Layout Bus Stand, 
+                  Bangalore- 560104
+                  </td>
+                <td>Vinutha S
+                  Librarian 
+                  </td>
+                <td>Library Opened on 04/02/2004, At present there are 12175 Members and we provide many services like Circulation Service, Newspaper & Magazine Service, Reference Service, Children Section & Internet Section. In 3rd Floor we have a seperate Reading Section for students preparing for Competative exams</td>
+                <td>Morning 8.30
+                  to
+                  Evening
+                  8.00
+                  </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>Dr.Vishnuvardhan Spardhatmaka
+                  Parikshegala Adhyan kendra</b> 
+                  BBMP complex 1st floor 1st main road MC layout Vijayanagar Bangalore -40
+                  </td>
+                <td>Parvathi C
+                  Assistant Librarian
+                  </td>
+                <td>Library Opened on 21/08/2007. We provide reference Service for students prepering for Competative exams and
+                  we also provide only  Newspapers & Magazine Services for Public 
+                  </td>
+                <td>Morning 7.30
+                  to
+                  Evening
+                  9.00
+                  </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>Agrahara Dasarahalli Branch Library</b>
+                  Dr.B.R.Ambedkar Stadium Premises, Basaveshwaranagar Bangalore -79
+                  </td>
+                <td>Padmaja
+                  Assistant Librarian
+                  </td>
+                <td>Library Opened on 17/02/2009, At present there are 1171 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service</td>
+                <td>Morning 8.30
+                  to
+                  Evening
+                  8.00
+                  </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><b>Late N. D. Bagari City Central Library</b> 
+                Near Bus stop, next to Water tank, Vijayanagar, Banaglore-560040
+                
+                </td>
+              <td>Jalaja P
+                Library Assistant 
+                
+                </td>
+              <td>Library Opened on 13/12/1998, At present there are 10789 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service. We have a seperate room embedded with computer systems for the use of competative Students</td>
+              <td>Morning 8.30
+                to
+                Evening
+                8.00
+                </td>
+          </tr>
+
+
+        <tr> </td>
+          <td>
+          <td><b>Chamarajapet Branch Library</b>
+            4th Cross, 1st main road, Chamarajpet, Bangalore-560018
+            </td>
+          <td>Ramachandra H C
+            Library Assistant 
+           
+            </td>
+          <td>Library Opened on 08/08/1970, At present there are  2012 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service
+            </td>
+          <td>Morning 8.30 to 11.30
+            Evening 4.00 to 8.00
+           
+            </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><b>Kempegowda Nagar Branch Library</b> BBMP Primary School Building Kempegowda nagar Main road,
+          Bangalore -19
+          
+          </td>
+        <td>Ramachandra H C
+          Library Assistant 
+         (Additional Charge)
+          </td>
+        <td>Library Opened on 16/05/1992, At present there are 2310 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service</td>
+        <td>Morning 8.30
+          to
+          Evening
+          8.00
+          
+          </td>
+    </tr>
+
+     <tr>
+          <td></td>
+          <td><b>Cottonpet Branch Library</b>
+            # 27, Subramani Line, Cottonpet, Bangalore-560053
+            
+            
+            </td>
+          <td>Naveen L N 
+            Library Assistant 
+            (Additional Charge)
+            </td>
+          <td>Library Opened on 22/02/1991 , At present there are 1232 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service</td>
+          <td>Morning 8.30 to 11.30
+            Evening 4.00 to 8.00
+            </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><b>Magadi road 2nd cross Branch Library</b> BBMP building 1st Floor Magadi road 2nd cross, Bangalore -23
+          </td>
+        <td>Avinash Dandin
+          Library Assistant           
+          </td>
+        <td>Library Opened on 03/05/1999, At present there are 1317 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service</td>
+        <td>Morning 8.30 to 11.30
+          Evening 4.00 to 8.00                    
+          </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td><b>Kamalanagar Branch Library</b>
+        #178, 1st Floor, 8th Main, BEML Layout, Kamalanagar, Bangalore-560018        
+        </td>
+      <td>Jyothi S Kundaragi
+        Library Assistant         
+       </td>
+      <td>Library Opened on 10/01/2008, At present there are 3096 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service</td>
+      <td>Morning 8.30 to 11.30
+        Evening 4.00 to 8.00        
+        </td>
+    </tr>
+
+   
+    <tr>
+      <td></td>
+      <td><b>Bytarayanpura branch Library</b> No.142/1 1st floor 2nd cross 1st main road Byatarayyanpura, Bangalore 26
+        </td>
+      <td>Puttaraju K
+        Library Assistant       
+       </td>
+      <td>Library Opened on 17/11/1998, At present there are  1615 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30 to 11.30
+        Evening 4.00 to 8.00        
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Azad Nagar Branch Library</b>5th Cross, 2nd Main road, Azad Nagar, Bangalore-560018
+        </td>
+      <td>Puttaraju K
+        Library Assistant 
+       (Additional Charge)             
+       </td>
+      <td>Library Opened in 1982, At present there are  1313 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30 to 11.30
+        Evening 4.00 to 8.00               
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Deepanjali Nagara Branch Library</b>1st Main road, Near BMTC Depo, Deepaqnjali Nagara, Bangalore-560026
+        </td>
+      <td>Hemavathi B
+        Library Attender              
+       </td>
+      <td>Library Opened on 21/12/1982, At present there are 1371 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30 to 11.30
+        Evening 4.00 to 8.00              
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Jaga Jeevanram Library</b> 2nd Main road, in front of Jaga Jeevanram nagar police station road,  Behind Government Primary School, Jaga Jeevanram nagar Bangalore-560026
+        </td>
+      <td>Ramachandra H C
+        Library Assistant 
+       (Additional Charge)            
+       </td>
+      <td>Library Opened on 24/09/1986, At present there are 1202  Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30 to 11.30
+        Evening 4.00 to 8.00                
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Police Colony Branch Library</b> Magadi road, Near Tollgate, Police Colony, Bangalore-560023
+        </td>
+      <td>Naveen L N Library Assistant       
+       </td>
+      <td>Library Opened on 28/10/1968, At present there are 728 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30
+        to
+        Evening
+        8.00               
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Hosahalli Branch Library</b>2nd Main road, 2nd Cross, Hosahalli, Vijayanagar, Bangalore-560040
+        </td>
+      <td>Asha R
+        Library Assistant              
+       </td>
+      <td>Library Opened on 07/08/1997, At present there are  327 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 9.00
+        to
+        Evening
+        4.00            
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Bapujinagar Branch Library </b> 5th cross 2nd stage Opp to saraswathi school Bangalore -26
+        </td>
+      <td>Pushpalatha M Library Assistant        
+       </td>
+      <td>Library Opened on 14/06/2003, At present there are 728 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30 to 11.30
+        Evening 4.00 to 8.00                
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Raja Rajeshwari Nagar Library</b> #345, Ideal Homes Township Raja Rajeshwari Nagar, Bangalore-560098
+        </td>
+      <td>Nirmala C
+        Library Assistant            
+       </td>
+      <td>Library Opened on 01/03/2008, At present there are 2364 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30
+        to
+        Evening
+        8.00                
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Nagarbhavi 2nd Phase, Branch Library</b>Near Aladamara Bus stop, Next to Papareddypalya Government School, Bangalore-5600
+        </td>
+      <td>Hemavathi Bai
+        Library Attender            
+       </td>
+      <td>Library Opened on 24/05/2004, At present there are  1066 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30 to 11.30
+        Evening 4.00 to 8.00                
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Kannada Sahiyathiya Parishath 
+        Branch Library 
+        </b> near Makkalakota chamrajpet 
+        Bangalore -18        
+        </td>
+      <td>Satish
+        Kannada Sahitya Parishat Staff               
+       </td>
+      <td>Library Opened on 24/08/2012, Circulation Service, and Reference Service is only restricted to Kannada Sahitya Parishath Members.</td>
+      <td>Morning 10.00 to 5.30        
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>E-Granthalaya Branch Library</b> (Above Bangalore One Seva Kendra) 1st  'F' Main road, 3rd stage, 4th block, Basaveshwaranagar, Bangalore-560079
+        </td>
+      <td>Bindu S      
+       </td>
+      <td>Library Opened on 01/04/2014, At present there are 256 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30 to 11.30
+        Evening 4.00 to 8.00              
+        </td>
+    </tr>
+
+
+    <!-- ======================================================================= -->
+    <tr>
+      <td></td>
+      <td><b>Vinayaka Layout Branch Library</b> Shri Shri Shri Dr. Shiva Kumara Swamy Ji Sarvajanika Seva Sankirana 3rd Floor 1st main road Vinayaka Baddavane Blr-40
+        </td>
+      <td>Jayalakshmi B S Library Assistant       
+       </td>
+      <td>Library Opened on 23/02/2019, At present there are 81 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30
+        to
+        Evening
+        8.00              
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Prashanth Nagar Branch Library</b>National HBCS Layout, Near Dr. Vishnuvardhan Park, Kalayanagar, Bangalore-560072
+        </td>
+      <td>Surekha
+        Librarian               
+       </td>
+      <td>Library Opened on 08/09/2020, At present there are 138 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30
+        to
+        Evening
+        8.00                
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Moodalpalya Digital Library</b>Shri Shri Shri Dr. Shiva Kumara Swamiji Gnana Soudha, Near Swami Vivekananda Park, Kalayananagar, Bangalore-560072
+      <td>Avinash Dandin
+        Library Assistant 
+        (Additional Charge)               
+       </td>
+      <td>Library was opened on 15/10/2020, we provide only Newspaper & Magazine Service and Since its Digital library it is embedded with computer systems for the use of competative Students.</td>
+      <td>Morning 8.30
+        to
+        Evening
+        8.00          
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Teachers Colony Branch Library</b> BBMP Building, 8th Cross, Teachers Colony Nagarbhavi ward, Bangalore-560079
+        </td>
+      <td>Pushpalatha M Library Assistant 
+        (Additional Charge)              
+       </td>
+      <td>Library opened  on 24/07/2021, At present there are 76 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30
+        to
+        Evening
+        8.00              
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Suvarna Badavane Branch Library</b> First Floor, BBMP Building,Suvarna Badavane, Bangalore
+        </td>
+      <td>Nirmala C 
+        Library Assistant 
+        (Additional Charge)               
+       </td>
+      <td>Library Opened on 01/07/2022, At present there are 41 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30
+        to
+        Evening
+        8.00               
+        </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><b>Anubhavanagar Branch Library</b> 3rd Main Road, near Anubhavanagar park, Nagarbhavi Main road, Bangalore-72
+        </td>
+      <td>Parvathi C 
+        Library Assistant 
+        (Additional Charge)                       
+       </td>
+      <td>Library Opened on 24/03/2023, At present there are 07 Members and we provide many services Circulation Service, Newspaper & Magazine Service and Reference Service.</td>
+      <td>Morning 8.30 to 11.30
+        Evening 4.00 to 8.00                  
+        </td>
+    </tr>
+      
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+    <script>
+        // Initialize DataTable with serial numbers
+        $(document).ready(function() {
+            var table = $('#libraryTable').DataTable({
+                "columnDefs": [{
+                    "searchable": false,
+                    "orderable": false,
+                    "targets": 0
+                }],
+                "order": [[1, 'asc']]
+            });
+
+            // Generate serial numbers
+            table.on('order.dt search.dt', function() {
+                table.column(0, {search:'applied', order:'applied'}).nodes().each(function(cell, i) {
+                    cell.innerHTML = i + 1;
+                });
+            }).draw();
+        });
+    </script>
+
+<div>&nbsp</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer class="footer-bs" style="background-color: aliceblue;border: groove;">      <div class="row">
           <!--<div class="col-md-4 footer-brand animated fadeInLeft">-->
           <!--<img src="images/gok_logo.png" class="img-responsive" style="width: 30%" />-->
@@ -1574,8 +2048,6 @@
       
   
 
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
+  
   </body>
 </html>
